@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+body {
+  font-family: 'open sans', sans-serif;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ebebeb;
+}
+
+#root {
+  margin: 0 auto;
+  padding: 2em;
+  text-align: center;
+}
+
+.title {
+  margin: 20px 0;
+}
+
+.mainChat {
+  border: 2px solid #a1fad8;
+  border-radius: 15px;
+  overflow: hidden;
+  padding: 5px;
+  box-shadow: 1px 2px 5px #3f3e3e;
+}
+
+.nameForm {
+  display: flex;
+  align-items: center;
+}
+
+.nameInput {
+  font-size: 24px;
+  font-weight: bold;
+  color: #7e7e7e;
+  border: none;
+  margin: 0 12px;
+  outline: none;
+  background-color: rgba(137, 253, 209, 0);
+}
+
+.conversation {
+  background-color:rgba(11, 187, 251, 0.071);
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 350px;
+  border-radius: 10px;
+  padding: 0;
+  margin: 0;
+}
+
+.conversation::-webkit-scrollbar {
+  background-color: rgba(11, 187, 251, 0.071);
+  width: 0px;
+}
+
+ul {
+  margin: 0;
+}
+
+.messageLeft, .messageRight { 
+  list-style: none;
+  padding: 8px 12px;
+  margin: 12px;
+  font-size: 18px;
+  word-wrap: break-word;
+  border-radius: 25px;
+}
+
+.messageLeft {
+  background-color: rgba(142,138,138, 0.5);
+  align-self: flex-start;
+  box-shadow: -2px 2px 4px #dcdcdc;
+}
+
+.messageRight {
+  background-color: rgba(137,253,208, 0.5);
+  align-self: flex-end;
+  box-shadow: 2px 2px 4px #dcdcdc;
+}
+
+.messageLeft span, .messageRight span {
+  font-style: italic;
+  margin-top: 4px;
+  font-size: 12px;
+}
+
+.message {
+  margin: 2px 0;
+}
+
+.messageFeedback {
+  font-style: italic;
+  font-size: 14px;
+  color: #2d2d2d;
+  text-align: center;
+  margin: 0;
+  list-style: none;
+}
+
+.messageForm {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+  box-shadow: 1px 2px 5px #3f3e3e;
+  border-radius: 10px;
+}
+
+.messageInput {
+  flex-grow: 1;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  padding: 10px;
+  background-color: rgba(137,253,208, 0.071);
+  padding: 10px;
+}
+
+button {
+  background-color: rgba(137, 253, 209, 0.5);
+  border: none;
+  border-radius: 0px 10px 10px 0px;
+  padding: 5px;
+  align-items: center;
+  box-shadow: 1px 2px 5px #3f3e3e;
+}
+
+button:hover {
+  background-color: rgb(137, 253, 209);
+}
+
+vDivider {
+  height: 48px;
+  width: 2px;
+  background-color: #010c0c;
+}
